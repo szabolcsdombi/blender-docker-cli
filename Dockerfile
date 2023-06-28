@@ -6,6 +6,6 @@ RUN apt-get update && apt-get install -y wget xz-utils libgl-dev libxi-dev libxr
     rm blender-3.6.0-linux-x64.tar.xz &&\
     mv blender-3.6.0-linux-x64 blender &&\
     rm -rf /blender/3.6/python &&\
-    echo '/blender/blender -noaudio -b --python-use-system-env $@' > /usr/bin/blender &&\
+    echo '#!/bin/sh\n/blender/blender -noaudio -b --python-use-system-env $@' > /usr/bin/blender &&\
     chmod +x /usr/bin/blender
 CMD blender --python-console
