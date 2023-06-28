@@ -51,7 +51,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
 
 ```
-$ docker run --rm -it blender-cli blender --python export.py scene.blend
+$ docker run --rm -it -v `pwd`/data:/data blender-cli blender --python /data/export.py /data/scene.blend
 ```
 
 ## Links
