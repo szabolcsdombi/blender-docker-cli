@@ -41,7 +41,7 @@ docker build . -t blender-cli
 
 ## Example Usage
 
-```
+```console
 $ docker run --rm -it blender-cli
 Blender 3.6.0 (hash c7fc78b81ecb built 2023-06-27 08:23:50)
 Python 3.10.12 (main, Jun 22 2023, 06:36:47) [GCC 11.2.1 20220127 (Red Hat 11.2.1-9)] on linux
@@ -50,10 +50,10 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
-```
+```console
 $ docker run --rm -it -v `pwd`/data:/data blender-cli blender --python /data/export.py /data/scene.blend
 ```
 
 ## Links
 
-- [Blender command line arguments](https://docs.blender.org/manual/en/latest/advanced/command_line/arguments.html).
+- [Blender command line arguments](https://docs.blender.org/manual/en/latest/advanced/command_line/arguments.html)
